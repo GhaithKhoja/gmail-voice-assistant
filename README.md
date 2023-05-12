@@ -15,8 +15,7 @@
 3. Get Gmail API credentials.json, follow the guide here [Gmail API Guide](https://developers.google.com/gmail/api/quickstart/python)
 4. Get Azure Speech Key [Azure API](https://azure.microsoft.com/en-us/products/api-management/?ef_id=_k_CjwKCAjwx_eiBhBGEiwA15gLNyx7zP9LxPrEZp2d4VYFjvdk0UXp2n9uZg7Xi686Kqsq9RIxjHV6ixoCzmcQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwx_eiBhBGEiwA15gLNyx7zP9LxPrEZp2d4VYFjvdk0UXp2n9uZg7Xi686Kqsq9RIxjHV6ixoCzmcQAvD_BwE_k_&gad=1&gclid=CjwKCAjwx_eiBhBGEiwA15gLNyx7zP9LxPrEZp2d4VYFjvdk0UXp2n9uZg7Xi686Kqsq9RIxjHV6ixoCzmcQAvD_BwE)
 5. Find your Azure Speech Region at [Azure regions](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-text-to-speech?tabs=streaming#prebuilt-neural-voices)
-<br />
-For Azure Speech region you should use the URL format. For example, if you’re using the “East US” region, the value should be “eastus”. See Azure Region list.
+.For Azure Speech region you should use the URL format. For example, if you’re using the “East US” region, the value should be “eastus”. See Azure Region list.
 6. Download Whisper.cpp model at [Whisper API Model](https://github.com/ggerganov/whisper.cpp#quick-start)
 
 
@@ -31,7 +30,7 @@ For Azure Speech region you should use the URL format. For example, if you’re 
     pip install -r requirements.txt
     ```
 3. Move your credentials.json to your project folder
-4. Find your (absolute) paths for the whisper.cpp shared library file and the model you’ve just downloaded. If whisper.cpp is downloaded at /whisper.cpp, then the absolute path is /whisper.cpp/
+4. Find your (absolute) paths for the `whisper.cpp` shared library file and the model you’ve just downloaded. If `whisper.cpp` is downloaded at `/whisper.cpp`, then the absolute path is `/whisper.cpp/`
 5. Fill in your whisper path in `gmail_assistant.py`
 6. Fill in your API keys in `gmail_assistant.py`
 
