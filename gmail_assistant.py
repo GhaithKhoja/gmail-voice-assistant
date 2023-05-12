@@ -18,11 +18,16 @@ from vocode.streaming.models.synthesizer import (
 )
 from vocode.streaming.synthesizer.azure_synthesizer import AzureSynthesizer
 
+vocode.api_key = '<your vocode key>'
+
 vocode.setenv(
     OPENAI_API_KEY="<your OpenAI key>",
     AZURE_SPEECH_KEY="<your Azure key>",
     AZURE_SPEECH_REGION="<your Azure region>",
 )
+
+# Example '/whisper.cpp/'
+WHISPER_PATH = "<your whisper path>"
 
 
 logging.basicConfig()
@@ -40,8 +45,8 @@ async def main():
         transcriber=WhisperCPPTranscriber(
             WhisperCPPTranscriberConfig.from_input_device(
                 microphone_input,
-                libname="/whisper.cpp/libwhisper.so",
-                fname_model="/whisper.cpp/models/ggml-tiny.bin",
+                libname=f"{WHISPER_PATH}libwhisper.so",
+                fname_model=f"{WHISPER_PATH}models/ggml-tiny.bin",
             )
         ),
         agent=GmailAgent(),
