@@ -16,7 +16,7 @@
 4. Get Azure Speech Key [Azure API](https://azure.microsoft.com/en-us/products/api-management/?ef_id=_k_CjwKCAjwx_eiBhBGEiwA15gLNyx7zP9LxPrEZp2d4VYFjvdk0UXp2n9uZg7Xi686Kqsq9RIxjHV6ixoCzmcQAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwx_eiBhBGEiwA15gLNyx7zP9LxPrEZp2d4VYFjvdk0UXp2n9uZg7Xi686Kqsq9RIxjHV6ixoCzmcQAvD_BwE_k_&gad=1&gclid=CjwKCAjwx_eiBhBGEiwA15gLNyx7zP9LxPrEZp2d4VYFjvdk0UXp2n9uZg7Xi686Kqsq9RIxjHV6ixoCzmcQAvD_BwE)
 5. Find your Azure Speech Region at [Azure regions](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-text-to-speech?tabs=streaming#prebuilt-neural-voices)
 .For Azure Speech region you should use the URL format. For example, if you’re using the “East US” region, the value should be “eastus”. See Azure Region list.
-6. Download Whisper.cpp model at [Whisper API Model](https://github.com/ggerganov/whisper.cpp#quick-start)
+6. Download Whisper.cpp model at [Whisper CPP Models](https://github.com/ggerganov/whisper.cpp#quick-start)
 
 
 ### Installation
